@@ -24,7 +24,7 @@ const vm = new Vue({
     methods: {
         dispatchMessage() {
             //send a chat message
-            socket.emit('chat message', { content: this.messages, name: this.nickname || "Anonymous"} );
+            socket.emit('chat message', { content: this.message, name: this.nickname || "Anonymous"} );
 
 
             this.message = "";
