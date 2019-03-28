@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Trevor-FanshaweC/VanRys_T_ChatApp_GrB.git"
+    "url": "git+https://github.com/JorgeAndrino/Andrino_J_ChatApp"
   },
   "author": "TVR",
   "license": "ISC",
-  "homepage": "https://github.com/Trevor-FanshaweC/VanRys_T_ChatApp_GrB#readme",
+  "homepage": "https://github.com/JorgeAndrino/Andrino_J_ChatApp#readme",
   "dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.2.0"

@@ -19,4 +19,22 @@ const server = app.listen(port, () => {
     console.log(`app is running on port ${port}`);
 });
 
-// socket.io chat app stuff to follow
+// plug in the chat app package
+io.attach(server);
+
+io.on('connection', function(socket){
+    console.log('a user has connected', socket);
+    socket.emit('connected', {sID: `${socket.id}`, message: 'new connection'} );
+
+    // listen for incoming messages
+    socket.on('chat message', function(msg) {
+        console.log('message', msg, 'socket', socket.id);
+
+        //send a message to every connected client
+        io.emit('chat message', { id: `${socket.id}`, message: msg });
+    })
+
+    socket.on('disconnect', function() {
+        console.log('a user has disconnected');
+    });
+});
