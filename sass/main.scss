@@ -1,3 +1,9 @@
+// imports
+
+@import 'modules/_message';
+@import '_vars.scss';
+
+
 /* reset */
 * {
 	margin: 0; padding: 0; box-sizing: border-box;
@@ -67,6 +73,4 @@ form {
 	li:nth-child(odd) { background: #eee; }
 }
 
-// imports
 
-@import 'modules/_message';
