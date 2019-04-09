@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>College Chat</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="stylesheets/main.css">
 	<script src="https://unpkg.com/vue"></script> 
 </head>
 <body>
@@ -17,6 +17,7 @@
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
 				<input type="submit" @click.prevent="dispatchMessage">
 			</form>
+			<img src="/public/images/Fanshawe_College_Logo.png">
 		</section>
 		
 		<section class="messages">
