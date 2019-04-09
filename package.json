@@ -1,5 +1,5 @@
 {
-  "name": "vanrys_t_chatapp_grb",
+  "name": "andrino_j_chatapp",
   "version": "1.0.0",
   "description": "social media app",
   "main": "app.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JorgeAndrino/Andrino_J_ChatApp"
+    "url": "git+https://github.com/JorgeAndrino/Andrino_J_ChatApp.git"
   },
   "author": "TVR",
   "license": "ISC",
@@ -16,5 +16,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/JorgeAndrino/Andrino_J_ChatApp/issues"
   }
 }
