@@ -10,9 +10,21 @@ function setUserId({sID, message}) {
 
 }
 
+function connectNotification({notifications}){
+    vm.notifications.push(notifications);
+}
+
 function appendMessage(message) {
     vm.messages.push(message);
 }
+
+function userCount(data) {
+    console.log(data.userCount);
+}
+
+//socket.on('userCount', function (data) {
+//    console.log(data.userCount);
+//});
 
 
 const vm = new Vue({
@@ -20,7 +32,9 @@ const vm = new Vue({
         socketID: "",
         nickname: "",
         message: "",
-        messages: [],
+        notification: "",
+        notifications: [],
+        messages: []
     },
 
     methods: {
@@ -36,9 +50,15 @@ const vm = new Vue({
     components: {
         newmessage: ChatMessage
     }
+
+
 }).$mount("#app");
 
 socket.addEventListener('connected', setUserId);
+
+socket.addEventListener('user joined', connectNotification);
+
+socket.addEventListener('connected users', userCount);
 
 socket.addEventListener('chat message', appendMessage);
 

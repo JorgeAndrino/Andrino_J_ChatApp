@@ -21,6 +21,7 @@
 		</section>
 		
 		<section class="messages">
+			<p id="notification" v-for="notification in notifications">{{ notification }}</p>
 			<ul id="messages" v-for="message in messages">
 				<!--render the essage componet here-->
 				<newmessage :msg="message"></newmessage>

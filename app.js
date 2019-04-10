@@ -22,9 +22,19 @@ const server = app.listen(port, () => {
 // plug in the chat app package
 io.attach(server);
 
+const userCount = 0;
+
 io.on('connection', function(socket){
+    //See how many users are online
+    //userCount++;
+
+    io.emit('userCount', { userCount: userCount });
+
     console.log('a user has connected', socket);
+
     socket.emit('connected', {sID: `${socket.id}`, message: 'new connection'});
+
+    io.emit('joined', { notifications: "new user joined" });
 
     // listen for incoming messages
     socket.on('chat message', function(msg) {
@@ -36,5 +46,8 @@ io.on('connection', function(socket){
 
     socket.on('disconnect', function() {
         console.log('a user has disconnected');
+      //  userCount--;
+      io.emit('userCount', { userCount: userCount });
     });
+
 });
