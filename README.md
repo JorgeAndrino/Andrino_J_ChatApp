@@ -1,6 +1,6 @@
 # Chat Application
 
-A project for a chat application for Fanshawe students. MAde with Node.js and socket.io.
+A project for a chat application for Fanshawe students. Made with Node.js and socket.io.
 
 ## Getting Started
 
@@ -9,6 +9,7 @@ A project for a chat application for Fanshawe students. MAde with Node.js and so
 for this project you'll require:
 
 *[git](https://git-scm.com/downloads)
+
 *[npm](https://www.npmjs.com/get-npm)
 
 ### Installing
