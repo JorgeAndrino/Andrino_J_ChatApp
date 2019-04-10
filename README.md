@@ -18,3 +18,15 @@ for this project you'll require:
 ```
 npm install
 ```
+
+## Development
+
+ Watch for changes in .scss files:
+ 
+ ```
+ sass --watch sass:public/stylesheets
+ ```
+ 
+ ## Author
+ 
+ Jorge Andrino
