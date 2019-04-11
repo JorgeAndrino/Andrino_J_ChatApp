@@ -17,7 +17,8 @@
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
 				<input type="submit" @click.prevent="dispatchMessage">
 			</form>
-			<img src="/public/images/Fanshawe_College_Logo.png">
+			<img src="/images/Fanshawe_College_Logo.png">
+			<p>Users Online: {{users}}</p>
 		</section>
 		
 		<section class="messages">

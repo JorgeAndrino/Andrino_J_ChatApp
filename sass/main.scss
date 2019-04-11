@@ -26,7 +26,7 @@ main {
 .form-container { 
 	flex: 1; 
 	border: 6px solid #70100b;
-	background-color: #ec1919;
+	background-color: #e75b5b;
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
@@ -77,3 +77,16 @@ form {
 	li:nth-child(odd) { background: #eee; }
 }
 
+img 
+{
+	width: 85%;
+	margin-left: 5%;
+}
+
+p
+{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10%;
+}
