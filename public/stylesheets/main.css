@@ -5,61 +5,50 @@
   border-radius: 8px;
   margin-bottom: 1rem;
   float: left;
-  clear: both;
-}
-.new-message span {
-  font-size: 0.8rem;
-  display: block;
-  margin-bottom: 2px;
-}
+  clear: both; }
+  .new-message span {
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 2px; }
 
 .my-message {
   float: right !important;
   background-color: #4ebfce;
-  color: white;
-}
+  color: white; }
 
 /* reset */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html, body {
-  height: 100%;
-}
+  height: 100%; }
 
 body {
   font: 16px Helvetica, Arial;
-  font-size: 70%;
-}
+  font-size: 70%; }
 
 main {
   display: flex;
   height: 100%;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .form-container, .messages {
-  padding: 20px;
-}
+  padding: 20px; }
 
 .form-container {
   flex: 1;
   border: 6px solid #70100b;
-  background-color: #ec1919;
-}
-.form-container label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
+  background-color: #e75b5b; }
+  .form-container label {
+    display: block;
+    margin-bottom: 0.5rem; }
 
 .messages {
   flex: 2;
   background-color: #858282;
-  border: 6px solid #971818;
-}
+  border: 6px solid #971818; }
 
 input, textarea {
   display: block;
@@ -68,39 +57,42 @@ input, textarea {
   border-radius: 4px;
   font-size: 0.8rem;
   padding: 0.4rem;
-  border-style: solid;
-}
+  border-style: solid; }
 
 textarea {
-  height: 135px;
-}
+  height: 135px; }
 
 form {
   padding: 3px;
-  margin: 12px auto;
-}
-form input[type=submit] {
-  width: auto;
-  padding: 10px;
-  background-color: #858282;
-  margin-top: 1rem;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+  margin: 12px auto; }
+  form input[type=submit] {
+    width: auto;
+    padding: 10px;
+    background-color: #858282;
+    margin-top: 1rem;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold; }
 
 #messages {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-}
-#messages li {
-  padding: 5px 10px;
-}
-#messages li:nth-child(odd) {
-  background: #eee;
-}
+  padding: 0; }
+  #messages li {
+    padding: 5px 10px; }
+  #messages li:nth-child(odd) {
+    background: #eee; }
+
+img {
+  width: 85%;
+  margin-left: 5%; }
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10%; }
 
 /*# sourceMappingURL=main.css.map */
